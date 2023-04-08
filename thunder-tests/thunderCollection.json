@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "b4d29e35-103b-4354-ad2c-66bdf203dfd5",
+    "colName": "iNotebook",
+    "created": "2023-03-26T07:32:01.206Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "533e4d4d-6bb7-46b9-a20d-e68c0d3c9083",
+        "name": "Authentication",
+        "containerId": "",
+        "created": "2023-03-26T07:32:01.249Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "98febf20-bb9a-4478-becf-eb807a24410f",
+        "name": "Notes",
+        "containerId": "",
+        "created": "2023-03-26T07:32:01.437Z",
+        "sortNum": 20000
+      }
+    ]
+  }
+]

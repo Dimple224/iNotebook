@@ -1,0 +1,167 @@
+[
+  {
+    "_id": "2abfe473-85bd-4a73-8bcb-9c51185c1382",
+    "colId": "d2218b07-15c2-4a2e-9713-25f3ac88bba7",
+    "containerId": "175b6b07-31ed-4867-bdf0-3d7dd697ec9e",
+    "name": "Create a new User",
+    "url": "localhost:5000/api/auth/createuser",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-03-23T07:36:48.210Z",
+    "modified": "2023-03-23T13:44:18.157Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Suresh Nakum2\",\n  \"email\": \"smnakum263@gmail.com\",\n  \"password\": \"suresh63\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "241002c1-e067-447c-ae41-538e9e0eec7b",
+    "colId": "d2218b07-15c2-4a2e-9713-25f3ac88bba7",
+    "containerId": "175b6b07-31ed-4867-bdf0-3d7dd697ec9e",
+    "name": "User login using creds",
+    "url": "http://localhost:5000/api/auth/login",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-03-23T14:40:41.612Z",
+    "modified": "2023-03-24T11:30:54.387Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \n\"email\":\"bmehta@gmail.com\",\n\"password\":\"scam2021\"\n\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "23ec905e-880a-436a-ab48-582ee025e4ff",
+    "colId": "d2218b07-15c2-4a2e-9713-25f3ac88bba7",
+    "containerId": "175b6b07-31ed-4867-bdf0-3d7dd697ec9e",
+    "name": "Get User Data",
+    "url": "localhost:5000/api/auth/getuser",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2023-03-24T11:18:36.239Z",
+    "modified": "2023-03-24T11:34:29.167Z",
+    "headers": [
+      {
+        "name": "auth-token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQxYzRmYTQ0MDU4NTUyMDQ2YWY2OTFkIn0sImlhdCI6MTY3OTY1NzQ1NH0.idSN5DWTC_BtE9hbYi37EKnGAP_DPfVMUwCaEPeE2hs"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "a26962d9-1328-46fc-b8d9-676f26191d87",
+    "colId": "d2218b07-15c2-4a2e-9713-25f3ac88bba7",
+    "containerId": "7678e625-ee8a-449f-b899-4401a242c430",
+    "name": "Fetch All Notes",
+    "url": "localhost:5000/api/notes/fetchallnotes",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2023-03-24T14:09:37.624Z",
+    "modified": "2023-03-24T14:43:44.901Z",
+    "headers": [
+      {
+        "name": "auth-token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQxYzRmYTQ0MDU4NTUyMDQ2YWY2OTFkIn0sImlhdCI6MTY3OTY1NzQ1NH0.idSN5DWTC_BtE9hbYi37EKnGAP_DPfVMUwCaEPeE2hs"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "13bb126e-4980-4f92-807c-8da8008c0e55",
+    "colId": "d2218b07-15c2-4a2e-9713-25f3ac88bba7",
+    "containerId": "7678e625-ee8a-449f-b899-4401a242c430",
+    "name": "Add Note",
+    "url": "localhost:5000/api/notes/addnote",
+    "method": "POST",
+    "sortNum": 60000,
+    "created": "2023-03-25T06:00:25.851Z",
+    "modified": "2023-03-25T06:35:27.515Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "auth-token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQxYzRmYTQ0MDU4NTUyMDQ2YWY2OTFkIn0sImlhdCI6MTY3OTY1NzQ1NH0.idSN5DWTC_BtE9hbYi37EKnGAP_DPfVMUwCaEPeE2hs"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"New Note\",\n  \"description\": \"Please access the playlist\",\n  \"tag\": \"YouTube\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "699c6fe0-4212-4863-b2f5-c2ed6e0013c4",
+    "colId": "d2218b07-15c2-4a2e-9713-25f3ac88bba7",
+    "containerId": "7678e625-ee8a-449f-b899-4401a242c430",
+    "name": "Update Note",
+    "url": "localhost:5000/api/notes/updatenote/641e940e731114c39f52b3cb",
+    "method": "PUT",
+    "sortNum": 70000,
+    "created": "2023-03-25T06:59:21.335Z",
+    "modified": "2023-03-25T07:24:16.083Z",
+    "headers": [
+      {
+        "name": "auth-token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQxYzRmYTQ0MDU4NTUyMDQ2YWY2OTFkIn0sImlhdCI6MTY3OTY1NzQ1NH0.idSN5DWTC_BtE9hbYi37EKnGAP_DPfVMUwCaEPeE2hs"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"New Note updated2\",\n  \"description\": \"Please access the playlist updated\",\n  \"tag\": \"YouTube\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "943d1e86-dacb-41a8-a331-5a7efa6e3278",
+    "colId": "d2218b07-15c2-4a2e-9713-25f3ac88bba7",
+    "containerId": "7678e625-ee8a-449f-b899-4401a242c430",
+    "name": "Delete Note",
+    "url": "localhost:5000/api/notes/deletenote/641e95fe961a171d84ea1f35",
+    "method": "DELETE",
+    "sortNum": 80000,
+    "created": "2023-03-25T07:18:56.856Z",
+    "modified": "2023-03-25T07:29:35.359Z",
+    "headers": [
+      {
+        "name": "auth-token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQxYzRmYTQ0MDU4NTUyMDQ2YWY2OTFkIn0sImlhdCI6MTY3OTY1NzQ1NH0.idSN5DWTC_BtE9hbYi37EKnGAP_DPfVMUwCaEPeE2hs"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  }
+]
